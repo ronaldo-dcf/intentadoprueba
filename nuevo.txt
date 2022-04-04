@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+void figonaci(int cantidad) {
+    int atrasnumero = 1, auxiliar = 0, adelantenumero = 1;
+    for (int j = 0;j < cantidad;j++)
+    {
+        auxiliar = atrasnumero;
+        atrasnumero = adelantenumero;
+        adelantenumero = atrasnumero + auxiliar;
+        cout << auxiliar << ", ";
+    }
+}
+
+int main()
+{
+    int cantidad = 0;
+    cout << "Digite la cantidad de numeros: "; cin >> cantidad;
+    figonaci(cantidad);
+    return 0;
+}
