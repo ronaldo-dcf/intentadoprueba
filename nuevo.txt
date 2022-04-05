@@ -17,6 +17,13 @@ int main()
 {
     int cantidad = 0;
     cout << "Digite la cantidad de numeros: "; cin >> cantidad;
-    figonaci(cantidad);
+    if (cantidad>=1)
+    { 
+        figonaci(cantidad);
+    }
+   else{
+       cout<<"El codigo no existe ";
+   }
     return 0;
 }
+
